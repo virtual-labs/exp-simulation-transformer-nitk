@@ -2,38 +2,255 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Instrument transformers are classified as:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Potential transformer",
+        "b": "Current transformer",
+        "c": "Both Potential transformer and Current transformer",
+        "d": "None"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": ""
+    },
+    {
+      "question": "Potential transformers are made with",
+      "answers": {
+        "a": "Low quality icon core operating at very low flex density so that the magnetizing current may be large",
+        "b": "High quality icon core operating at very high flex density so that the magnetizing current may be large",
+        "c": "High quality icon core operating at very high flex density so that the magnetizing current may be very small",
+        "d": "High quality icon core operating at very low flex density so that the magnetizing current may be very small"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Potential transformers are carefully designed to ensure",
+      "answers": {
+        "a": "Minimum variation of voltage ratio with load and minimum phase shift between input and output voltages",
+        "b": "Minimum variation of voltage ratio with load and maximum phase shift between input and output voltages",
+        "c": "Maximum variation of voltage ratio with load and maximum phase shift between input and output voltages",
+        "d": "Maximum variation of voltage ratio with load and minimum phase shift between input and output voltages"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "In a transformer, if N2 is number of secondary winding N1 is the number of primary winding then, if (N2/N1) ratio is lesser than 1.It is called as ________",
+      "answers": {
+        "a": "Step down transformer",
+        "b": "Step up transformer",
+        "c": "Isolation transformer",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "In an ideal transformer,",
+      "answers": {
+        "a": "There are no losses",
+        "b": "Windings have zero resistance",
+        "c": "Leakage flex is zero",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Oil transformer usually consist of,",
+      "answers": {
+        "a": "A conservator tank, buchholz relay",
+        "b": "Breather of dehydrating type",
+        "c": "Winding temperature-indicator, oil temperature indicator",
+        "d": "Al"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "32 step tap changes provide ________ voltage change in each step.",
+      "answers": {
+        "a": "5/4 %",
+        "b": "4/5 %",
+        "c": "5/8%",
+        "d": "8/5 %"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Conservator is an oil-expansion tank mounted _________ on the transformer.",
+      "answers": {
+        "a": "Below the highest oil point",
+        "b": "Ground level",
+        "c": "Above the highest oil point",
+        "d": "Any of them"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The function of __________ is to isolate the part of the power system in case of abnormal conditions.",
+      "answers": {
+        "a": "Circuit Breaker",
+        "b": "Isolator",
+        "c": "Insulator",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "Advantages of using Air blast Circuit breakers :",
+      "answers": {
+        "a": "Current chopping",
+        "b": "Sensitivity to restricting voltage",
+        "c": "Short arc duration",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "When low inductive current is interrupted by a Circuit breaker and the arc generating force of the Circuit breaker and is more than necessary to interrupt a low magnitude of current, the current will be interrupted before its natural zero instant. It is termed as",
+      "answers": {
+        "a": "Restriking",
+        "b": "Recovery instant",
+        "c": "Current chopping",
+        "d": "Arcing voltage"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "_______ is the current (r.m.s value) that a Circuit breaker is capable of breaking under specified conditions and given recovery voltage",
+      "answers": {
+        "a": "Breaking capacity",
+        "b": "Making capacity",
+        "c": "Short-time capacity",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "__________ of a Circuit breaker depends upon its ability to withstand the temperature rise and the electromagnetic force effects.",
+      "answers": {
+        "a": "Breaking capacity",
+        "b": "Making capacity",
+        "c": "Short-time capacity",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Bus bar can be arranged in _________",
+      "answers": {
+        "a": "Single bus-bar system",
+        "b": "Double bus-bar system with sectionalisation",
+        "c": "Both Single bus-bar system and Double bus-bar system with sectionalisation",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The major advantage of single bus-bar system is that fault on one part of the bus'bar or system does not completely shut down the whole station.",
+      "answers": {
+        "a": "False",
+        "b": "True"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
     }
   ]
 }

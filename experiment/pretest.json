@@ -2,38 +2,136 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The transformer works on principle of ___________.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Self-induction",
+        "b": "Mutual induction",
+        "c": "Both Self-induction and Mutual induction",
+        "d": "None"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": ""
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The ratio of secondary induced emf to primary induced emf is known as ___________",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Voltage transform ratio",
+        "b": "Current ratio",
+        "c": "Power ratio",
+        "d": "All"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "Instrument Transformer are used because",
+      "answers": {
+        "a": "It is cheap",
+        "b": "It provides more safety",
+        "c": "It is not practicable to connect instruments and meters directly to the lines in high voltage circuits",
+        "d": "It provides more safety and It is not practicable to connect instruments and meters directly to the lines in high voltage circuits"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "A current transformer is a ________",
+      "answers": {
+        "a": "Step up transformer",
+        "b": "Step down transformer",
+        "c": "Both Step up transformer and Step down transformer",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "The important characteristics of the fluid used in CB are : -",
+      "answers": {
+        "a": "It should have good thermal and chemical stability",
+        "b": "It should have high dielectric strength and are extinguish ability",
+        "c": "Non- inflammability and high thermal conductivity",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "SF6 circuit breaker is",
+      "answers": {
+        "a": "Expensive",
+        "b": "SF6 gas has to be reconditioned after every operation of the breaker and additional equipment is required for these purposes",
+        "c": "Both Expensive and SF6 gas has to be reconditioned after every operation of the breaker and additional equipment is required for these purposes",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": ""
+    },
+    {
+      "question": "In double bus'bar system ,there is a provision of a bus-bar coupling switch for transferring operation from one bus-bar to another _________",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": " _________ is a device which is used to switch from one bus to the other without any interruption in power supply and without creating hazardous arcs.",
+      "answers": {
+        "a": "Isolator",
+        "b": "Circuit breaker",
+        "c": "Bus coupler",
+        "d": "Any of the them"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
     }
   ]
 }
