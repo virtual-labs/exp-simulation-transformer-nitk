@@ -1,0 +1,11 @@
+
+/home/runner/work/exp-simulation-transformer-nitk/exp-simulation-transformer-nitk/experiment/simulation/js/refreshAnim.js
+  1:5  warning  'visibleImagesId' is assigned a value but never used  no-unused-vars
+
+/home/runner/work/exp-simulation-transformer-nitk/exp-simulation-transformer-nitk/experiment/simulation/js/transformer.js
+   27:10  warning  'changeSwitchStatus' is defined but never used  no-unused-vars
+  102:10  warning  'closeModal' is defined but never used          no-unused-vars
+  121:10  warning  'resetSwitch' is defined but never used         no-unused-vars
+
+✖ 4 problems (0 errors, 4 warnings)
+

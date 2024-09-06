@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE -SA</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/transformer.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <img src="./images/logo_nitk.png" alt="logo" class="logo" />
+        <h1>Fault in transformer / Bus</h1>
+      </div>
+      <div class="main">
+        <div class="dcs">
+          <img src="./images/dcs.png" alt="DCS" class="dcs-setup" />
+          <div class="reset" onclick="resetSwitch()">Reset</div>
+        </div>
+
+        <div class="setup">
+          <img src="./images/main.png" alt="main" class="main-setup" />
+          <span class="m1 ma1" id="mi1">45</span>
+          <span class="m1 mv1" id="mv1">11</span>
+          <span class="m1 mp1" id="mp1">857.36</span>
+          <span class="m2 ma2" id="mi2">30</span>
+          <span class="m2 mv2" id="mv2">11</span>
+          <span class="m2 mp2" id="mp2">571.57</span>
+          <span class="m3 ma3" id="mi3">25</span>
+          <span class="m3 mv3" id="mv3">33</span>
+          <span class="m3 mp3" id="mp3">1428.93</span>
+          <img
+            src="./images/leftArrow.png"
+            alt=""
+            class="red-arrow red-arrow-m1"
+          />
+          <img
+            src="./images/leftArrow.png"
+            alt=""
+            class="red-arrow red-arrow-m2"
+          />
+          <img
+            src="./images/leftArrow.png"
+            alt=""
+            class="red-arrow red-arrow-m3"
+          />
+          <img
+            src="./images/sw.png"
+            alt="switch"
+            class="sw sw-left"
+            id="leftTrans"
+            onclick="changeSwitchStatus(this)"
+          />
+          <img
+            src="./images/sw.png"
+            alt="switch"
+            class="sw sw-right"
+            id="rightTrans"
+            onclick="changeSwitchStatus(this)"
+          />
+          <img
+            src="./images/sw.png"
+            alt="switch"
+            class="sw sw-top"
+            id="upTrans"
+            onclick="changeSwitchStatus(this)"
+          />
+          <img src="./images/hand.png" alt="hande" class="hand hand-left" />
+          <img src="./images/hand.png" alt="hande" class="hand hand-right" />
+          <img src="./images/hand.png" alt="hande" class="hand hand-top" />
+          <img
+            src="./images/blue.png"
+            alt="blue"
+            class="blue blue--top displayy"
+            id="upBlue"
+          />
+          <img
+            src="./images/blue.png"
+            alt="blue"
+            class="blue blue--left displayy"
+            id="leftBlue"
+          />
+          <img
+            src="./images/blue.png"
+            alt="blue"
+            class="blue blue--right displayy"
+            id="rightBlue"
+          />
+        </div>
+        <div class="arrow">
+          <img src="./images/arrow.png" alt="arrow" class="ar" />
+        </div>
+      </div>
+
+      <div class="copyright">
+        <span style="font-weight: 900; font-size: 1.4rem">&copy;&nbsp;</span>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        SOLVE - The Virtual Lab @ NITK Surathkal
+      </div>
+    </div>
+    <div class="parentPopup displayy" id="parentPopup">
+      <div class="popup" id="popUpContent">sadasd</div>
+      <span>Trip</span>
+    </div>
+  <script src="../assets/js/iframeResize.js"></script></body>
+</html>
