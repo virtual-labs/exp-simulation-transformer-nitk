@@ -1,62 +1,109 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>SOLVE</title>
-<link rel="stylesheet" href="css/transformer.css" />
-<script>
-var simsubscreennum=0;
-var temp=0;
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOLVE -SA</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/transformer.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <img src="./images/logo_nitk.png" alt="logo" class="logo" />
+        <h1>Fault in transformer / Bus</h1>
+      </div>
+      <div class="main">
+        <div class="dcs">
+          <img src="./images/dcs.png" alt="DCS" class="dcs-setup" />
+          <div class="reset" onclick="resetSwitch()">Reset</div>
+        </div>
 
+        <div class="setup">
+          <img src="./images/main.png" alt="main" class="main-setup" />
+          <span class="m1 ma1" id="mi1">45</span>
+          <span class="m1 mv1" id="mv1">11</span>
+          <span class="m1 mp1" id="mp1">857.36</span>
+          <span class="m2 ma2" id="mi2">30</span>
+          <span class="m2 mv2" id="mv2">11</span>
+          <span class="m2 mp2" id="mp2">571.57</span>
+          <span class="m3 ma3" id="mi3">25</span>
+          <span class="m3 mv3" id="mv3">33</span>
+          <span class="m3 mp3" id="mp3">1428.93</span>
+          <img
+            src="./images/leftArrow.png"
+            alt=""
+            class="red-arrow red-arrow-m1"
+          />
+          <img
+            src="./images/leftArrow.png"
+            alt=""
+            class="red-arrow red-arrow-m2"
+          />
+          <img
+            src="./images/leftArrow.png"
+            alt=""
+            class="red-arrow red-arrow-m3"
+          />
+          <img
+            src="./images/sw.png"
+            alt="switch"
+            class="sw sw-left"
+            id="leftTrans"
+            onclick="changeSwitchStatus(this)"
+          />
+          <img
+            src="./images/sw.png"
+            alt="switch"
+            class="sw sw-right"
+            id="rightTrans"
+            onclick="changeSwitchStatus(this)"
+          />
+          <img
+            src="./images/sw.png"
+            alt="switch"
+            class="sw sw-top"
+            id="upTrans"
+            onclick="changeSwitchStatus(this)"
+          />
+          <img src="./images/hand.png" alt="hande" class="hand hand-left" />
+          <img src="./images/hand.png" alt="hande" class="hand hand-right" />
+          <img src="./images/hand.png" alt="hande" class="hand hand-top" />
+          <img
+            src="./images/blue.png"
+            alt="blue"
+            class="blue blue--top displayy"
+            id="upBlue"
+          />
+          <img
+            src="./images/blue.png"
+            alt="blue"
+            class="blue blue--left displayy"
+            id="leftBlue"
+          />
+          <img
+            src="./images/blue.png"
+            alt="blue"
+            class="blue blue--right displayy"
+            id="rightBlue"
+          />
+        </div>
+        <div class="arrow">
+          <img src="./images/arrow.png" alt="arrow" class="ar" />
+        </div>
+      </div>
 
-</script>
-</head>
-
-<body style="margin:0; font-family:verdana;">
-<div id="simscreen">
-<div id="title"><h3>Fault in Transformer/Bus</h3></div>
-
-<div class="simsubscreen" id="canvas0">
-	<img src="images/main.png" id="main" class="responsive" style="position: absolute; left: 20px; top: 20px;max-width: 800px;"/>
-	<img src="images/arrow.png" id="arr" style="position: absolute; left: 160px; top: 250px;width: 55px; visibility:visible">	
-	<img src="images/leftArrow.png" id="leftArrow" style="position: absolute; left: 330px; top: 328px;">	
-	<img src="images/hand.png" id="leftHand" style="position: absolute; left: 295px; top: 250px;width: 40px;">	
-	<img src="images/leftTrans.png" id="leftTrans" style="position: absolute; left: 340px; top: 245px;width: 60px;cursor: pointer" onclick="changeSwitchStatus(this)">	
-	<img src="images/leftArrow.png" id="rightArrow" style="position: absolute; left: 635px; top: 315px;transform: rotate(-90deg);">	
-	<img src="images/hand1.png" id="rightHand" style="position: absolute; left: 625px; top: 250px;width: 40px;">	
-	<img src="images/rightTrans.png" id="rightTrans" style="position: absolute; left: 565px; top: 245px;width: 60px;cursor: pointer" onclick="changeSwitchStatus(this)">
-	<img src="images/leftArrow.png" id="upArrow" style="position: absolute; left: 510px; top: 120px;transform: rotate(-180deg);">
-	<img src="images/hand.png" id="upHand" style="position: absolute; left: 440px; top: 190px;width: 40px;">
-	<img src="images/upTrans.png" id="upTrans" style="position: absolute; left: 480px; top: 180px;width: 35px;cursor: pointer	" onclick="changeSwitchStatus(this)">
-	<img src="images/reset.png" style="position: absolute; left: 70px; top: 410px;width: 100px; cursor: pointer" onclick="resetSwitch();">	
-	<div id="info1" style="position: absolute; left: 230px; top: 250px;color: rgb(120, 231, 120); width: 80px;font-family: verdana;font-size: 14px;visibility:visible"><i>Click here to create a fault</i></div>
-	<div id="info2" style="position: absolute; left: 675px; top: 250px;color: rgb(120, 231, 120); width: 80px;font-family: verdana;font-size: 14px;visibility:visible"><i>Click here to create a fault</i></div>
-	<p id="mi1" style="position: absolute;left: 260px;top: 387px;font-size: 12px">45</p>
-	<p id="mv1" style="position: absolute;left: 298px;top: 387px;font-size: 12px">11</p>
-	<p id="mp1" style="position: absolute;left: 340px;top: 387px;font-size: 12px">857.36</p>
-	<p id="mi2" style="position: absolute;left: 590px;top: 387px;font-size: 12px">30</p>
-	<p id="mv2" style="position: absolute;left: 630px;top: 387px;font-size: 12px">11</p>
-	<p id="mp2" style="position: absolute;left: 667px;top: 387px;font-size: 12px">571.57</p>
-	<p id="mi3" style="position: absolute;left: 575px;top: 100px;font-size: 12px">0</p>	
-	<p id="mv3" style="position: absolute;left: 620px;top: 100px;font-size: 12px">33</p>	
-	<p id="mp3" style="position: absolute;left: 655px;top: 100px;font-size: 12px">0</p>
-	<img src="images/blue.png" id="upBlue" style="position: absolute; left: 465px; top: 97px;width: 26px;opacity: 0">
-	<img src="images/blue.png" id="leftBlue" style="position: absolute; left: 404px; top: 212px;width: 27px;opacity: 0">
-	<img src="images/blue.png" id="rightBlue" style="position: absolute; left: 533px; top: 213px;width: 27px;opacity: 0">
-</div>
-
-
-
-<div class="parentPopup" id="parentPopup">
-	<div class="popup" id="popUpContent">    
-		dcdcdd  
-	</div>
-</div>
-
- 
-<div id="copyright"> &copy;<script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal</div>
-</div>
-<script type="text/javascript" src="js/transformer.js"></script>
-
-</body>
+      <div class="copyright">
+        <span style="font-weight: 900; font-size: 1.4rem">&copy;&nbsp;</span>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        SOLVE - The Virtual Lab @ NITK Surathkal
+      </div>
+    </div>
+    <div class="parentPopup displayy" id="parentPopup">
+      <div class="popup" id="popUpContent">sadasd</div>
+      <span>Trip</span>
+    </div>
+  </body>
 </html>
